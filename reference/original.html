@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="spm_prefix" content="333.40216" /><base href="https://s1.hdslb.com/bfs/static/toy/app/mario/v1/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>超级马里奥 · Super Mario</title>
+<link rel="stylesheet" href="style.css">
+<script src="//s1.hdslb.com/bfs/seed/jinkela/short/reporter-pb/index.js"></script><script>new ReporterPb()</script></head>
+<body>
+<div class="stage">
+  <header class="masthead">
+    <h1 class="logo"><span class="logo-red">SUPER</span> <span class="logo-yellow">MARIO</span></h1>
+    <p class="tagline">致敬 1985 经典 · 高还原网页版 · World 1-1</p>
+  </header>
+
+  <div class="bezel">
+    <div class="screen-wrap">
+      <canvas id="game" width="256" height="240"></canvas>
+      <div class="scanlines" id="scanlines"></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="controls">
+      <div class="ctl"><kbd>←</kbd><kbd>→</kbd><span>移动</span></div>
+      <div class="ctl"><kbd>↓</kbd><span>蹲下</span></div>
+      <div class="ctl"><kbd>Z</kbd>/<kbd>空格</kbd><span>跳跃（长按跳更高）</span></div>
+      <div class="ctl"><kbd>X</kbd>/<kbd>Shift</kbd><span>加速 · 火球</span></div>
+      <div class="ctl"><kbd>P</kbd><span>暂停</span></div>
+      <div class="ctl"><kbd>M</kbd><span>音乐开关</span></div>
+    </div>
+    <p class="tips">提示：吃蘑菇变大，变大后可顶碎砖块；吃火焰花可发射火球；踩中乌龟后再碰一下可以踢龟壳；隐藏砖块里藏着 1UP 蘑菇。</p>
+  </div>
+
+  <footer class="foot">FAN TRIBUTE · 仅供学习交流 · 全部像素与音效由代码绘制生成</footer>
+</div>
+
+<!-- 触屏控制（仅触屏设备显示） -->
+<div id="touch" class="touch hidden">
+  <div class="t-left">
+    <button class="tbtn" data-k="left">◀</button>
+    <button class="tbtn" data-k="right">▶</button>
+    <button class="tbtn" data-k="down">▼</button>
+  </div>
+  <div class="t-right">
+    <button class="tbtn b" data-k="run">B</button>
+    <button class="tbtn a" data-k="jump">A</button>
+  </div>
+</div>
+
+<script src="js/font.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/level.js"></script>
+<script src="js/game.js"></script>
+<script src="//s1.hdslb.com/bfs/seed/toy/app/addon/index.js"></script></body>
+</html>
